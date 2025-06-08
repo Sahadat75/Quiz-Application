@@ -7,30 +7,48 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="loginController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizapplication.LoginController">
+<AnchorPane fx:id="loginController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizapplication.LoginController">
    <children>
-      <Label layoutX="209.0" layoutY="81.0" prefHeight="30.0" prefWidth="206.0" text="Login to Start Quiz">
+      <Label layoutX="206.0" layoutY="32.0" prefHeight="30.0" prefWidth="206.0" text="Login to Start Quiz">
          <font>
             <Font name="Bell MT" size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="usernameField" layoutX="300.0" layoutY="148.0" prefHeight="30.0" prefWidth="213.0" />
-      <Button layoutX="260.0" layoutY="270.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="25.0" prefWidth="79.0" text="Login" />
-      <Label fx:id="errorlabel" layoutX="240.0" layoutY="330.0" text="Invalid credentials" visible="false">
+      <TextField fx:id="usernameField" layoutX="252.0" layoutY="88.0" prefHeight="30.0" prefWidth="213.0" />
+      <Button layoutX="351.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="27.0" prefWidth="79.0" text="Login">
+         <font>
+            <Font name="Bell MT" size="12.0" />
+         </font></Button>
+      <Label fx:id="errorlabel" layoutX="217.0" layoutY="330.0" prefHeight="21.0" prefWidth="283.0" text="Invalid credentials" textAlignment="CENTER" visible="false">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Label fx:id="username" layoutX="196.0" layoutY="148.0" prefHeight="25.0" prefWidth="91.0" text="UserName :">
+      <Label fx:id="username" layoutX="147.0" layoutY="90.0" prefHeight="25.0" prefWidth="91.0" text="UserName :">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="password" layoutX="193.0" layoutY="215.0" prefHeight="25.0" prefWidth="91.0" text="Password :">
+      <Label fx:id="password" layoutX="147.0" layoutY="154.0" prefHeight="25.0" prefWidth="91.0" text="Password :">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <PasswordField fx:id="passwordField" layoutX="300.0" layoutY="213.0" prefHeight="30.0" prefWidth="213.0" />
+      <PasswordField fx:id="passwordField" layoutX="252.0" layoutY="152.0" prefHeight="30.0" prefWidth="213.0" />
+      <Label layoutX="203.0" layoutY="273.0" text="Register Here : ">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="309.0" layoutY="271.0" mnemonicParsing="false" onAction="#register" prefHeight="22.0" prefWidth="71.0" text="Register">
+         <font>
+            <Font name="Bell MT Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="238.0" layoutY="213.0" mnemonicParsing="false" onAction="#cancel" prefHeight="22.0" prefWidth="71.0" text="Cancel">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

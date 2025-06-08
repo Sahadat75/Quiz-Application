@@ -16,7 +16,7 @@ public class main extends Application {
         primarystage.setScene(scene);
         primarystage.show();
     }
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         launch(args);
     }
 }
